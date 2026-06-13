@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prompts para el ícono — Mis Trámites</title>
+<style>
+  :root {
+    --fondo: #f5f3ef;
+    --oscuro: #1c1917;
+    --amarillo: #eab308;
+    --borde: #ece8e0;
+    --gris: #78716c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--oscuro);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.55;
+    padding: 28px 16px 60px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
+  }
+  .logo {
+    width: 44px; height: 44px; border-radius: 12px; background: var(--amarillo);
+    display: flex; align-items: center; justify-content: center; font-size: 24px;
+  }
+  h1 { font-size: 22px; margin: 0; }
+  .sub { color: var(--gris); margin: 0 0 22px; font-size: 14px; }
+  .card {
+    background: #fff; border: 1px solid var(--borde); border-radius: 16px;
+    padding: 16px 16px 18px; margin-bottom: 16px;
+  }
+  .card h2 { font-size: 15px; margin: 0 0 10px; }
+  .tag {
+    display: inline-block; font-size: 11px; font-weight: 700; color: var(--oscuro);
+    background: var(--amarillo); padding: 2px 9px; border-radius: 999px;
+    margin-left: 8px; vertical-align: middle;
+  }
+  pre {
+    white-space: pre-wrap; word-wrap: break-word; background: var(--fondo);
+    border: 1px solid var(--borde); border-radius: 12px; padding: 14px;
+    font-size: 13.5px; margin: 0 0 12px; font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  button {
+    cursor: pointer; border: none; border-radius: 11px; padding: 11px 16px;
+    font-size: 14px; font-weight: 600; font-family: inherit;
+    background: var(--oscuro); color: #fff; transition: background .15s;
+  }
+  button:hover { background: #3f3a34; }
+  button.copiado { background: #15803d; }
+  .variantes li { margin-bottom: 8px; }
+  code { background: var(--fondo); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+  .nota { font-size: 13px; color: var(--gris); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🚗</div>
+    <h1>Prompts para el ícono — Mis Trámites</h1>
+  </header>
+  <p class="sub">Toca <b>Copiar</b> y pégalo en tu generador de imágenes (DALL·E, Midjourney, Gemini…).</p>
+
+  <div class="card">
+    <h2>1. Prompt recomendado <span class="tag">EN</span></h2>
+    <pre id="p1">Flat minimalist mobile app icon, vector style. A single sheet of paper / document tilted diagonally as the main element, with a small simple car silhouette (or a license plate badge) integrated on top of the document. Subtle motion/road accent. Clean geometric shapes, bold and friendly, thick rounded edges, no gradients (or very subtle). Color palette: warm cream background (#F5F3EF), dark charcoal lines (#1C1917), and golden yellow accents (#EAB308). Centered composition with generous padding/safe margin, rounded-square icon format, flat design, high contrast, instantly recognizable at small sizes. No text, no letters, no words. Crisp, modern, professional. 1024x1024.</pre>
+    <button onclick="copiar('p1', this)">📋 Copiar</button>
+  </div>
+
+  <div class="card">
+    <h2>2. Versión en español <span class="tag">ES</span></h2>
+    <pre id="p2">Ícono de app móvil, estilo plano y minimalista (vector). Elemento principal: una hoja/documento inclinado en diagonal, y encima un carro sencillo de silueta (o una placa vehicular) integrado. Formas geométricas limpias, bordes redondeados, sin degradados. Colores: fondo crema (#F5F3EF), trazos negro carbón (#1C1917), acentos amarillo dorado (#EAB308). Composición centrada con margen de seguridad, formato cuadrado redondeado, alto contraste, reconocible en tamaño pequeño. Sin texto ni letras. Moderno y profesional. 1024x1024.</pre>
+    <button onclick="copiar('p2', this)">📋 Copiar</button>
+  </div>
+
+  <div class="card">
+    <h2>3. Variante "trámite" (placa + check) <span class="tag">EN</span></h2>
+    <pre id="p3">Flat minimalist mobile app icon, vector style. A document sheet tilted diagonally, with a vehicle license plate and a small approval checkmark on top of it. Clean geometric shapes, thick rounded edges, no gradients. Color palette: warm cream background (#F5F3EF), dark charcoal lines (#1C1917), golden yellow accents (#EAB308). Centered, generous safe margin, rounded-square format, high contrast, recognizable at small sizes. No text, no letters. Modern, professional. 1024x1024.</pre>
+    <button onclick="copiar('p3', this)">📋 Copiar</button>
+  </div>
+
+  <div class="card">
+    <h2>4. Variante "tránsito" (carretera) <span class="tag">EN</span></h2>
+    <pre id="p4">Flat minimalist mobile app icon, vector style. A document sheet tilted diagonally as the main element, with a curved yellow road line crossing behind it and a tiny car. Clean geometric shapes, thick rounded edges, no gradients. Color palette: warm cream background (#F5F3EF), dark charcoal lines (#1C1917), golden yellow accents (#EAB308). Centered, generous safe margin, rounded-square format, high contrast, recognizable at small sizes. No text, no letters. Modern, professional. 1024x1024.</pre>
+    <button onclick="copiar('p4', this)">📋 Copiar</button>
+  </div>
+
+  <div class="card">
+    <h2>5. Variante fondo oscuro <span class="tag">EN</span></h2>
+    <pre id="p5">Flat minimalist mobile app icon, vector style. A document sheet tilted diagonally with a small car silhouette on top. Dark charcoal background (#1C1917), cream-colored document (#F5F3EF), golden yellow accents (#EAB308). Clean geometric shapes, thick rounded edges, no gradients. Centered, generous safe margin, rounded-square format, high contrast, recognizable at small sizes. No text, no letters. Elegant, modern. 1024x1024.</pre>
+    <button onclick="copiar('p5', this)">📋 Copiar</button>
+  </div>
+
+  <div class="card">
+    <h2>Tips para que sirva como ícono</h2>
+    <ul class="variantes nota">
+      <li>Pide siempre <b>1024×1024</b>, <b>fondo sólido</b> (no transparente) y <b>sin texto</b>.</li>
+      <li>Que el dibujo <b>no toque los bordes</b> (margen ~15%): Android recorta las esquinas.</li>
+      <li>Genera <b>3–4 variantes</b> y elige la más limpia y legible al achicarla.</li>
+      <li>Cuando tengas la imagen, mándamela y la dejo como ícono real con <code>flutter_launcher_icons</code>.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function copiar(id, btn) {
+    const txt = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(txt).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = '✅ ¡Copiado!';
+      btn.classList.add('copiado');
+      setTimeout(() => { btn.textContent = orig; btn.classList.remove('copiado'); }, 1800);
+    }).catch(() => {
+      // Respaldo: seleccionar el texto
+      const r = document.createRange();
+      r.selectNode(document.getElementById(id));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(r);
+      document.execCommand('copy');
+      btn.textContent = '✅ ¡Copiado!';
+      setTimeout(() => { btn.textContent = '📋 Copiar'; }, 1800);
+    });
+  }
+</script>
+</body>
+</html>

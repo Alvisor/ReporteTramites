@@ -1,0 +1,13 @@
+{
+  "name": "reporte-tramites-backup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Respaldo automatico de Firestore a JSON",
+  "scripts": {
+    "export": "node export_firestore.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}

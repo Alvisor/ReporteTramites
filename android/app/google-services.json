@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "448579551082",
+    "project_id": "mis-tramites-familia",
+    "storage_bucket": "mis-tramites-familia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448579551082:android:9fa177226b7caa9d11af13",
+        "android_client_info": {
+          "package_name": "com.alvisor.reporte_tramites"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGewku3xVsr1T9cTnhAlVZsU025TWJ4UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+rules_version = '2';
+
+// Modelo: cada usuario ve/gestiona SOLO sus trámites (ownerUid == su uid).
+// El administrador (usuarios/{uid}.rol == 'admin') ve y gestiona TODO y puede reasignar.
+// El historial de eventos es inmutable (solo se crea).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function esAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/usuarios/$(request.auth.uid))
+        && get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == 'admin';
+    }
+
+    match /tramites/{tramiteId} {
+      allow read: if esAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow create: if signedIn()
+        && (esAdmin() || request.resource.data.ownerUid == request.auth.uid);
+      allow update: if esAdmin() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow delete: if false;
+
+      // Historial: el evento lleva su propio ownerUid (para no depender del padre
+      // al crearse dentro del mismo lote). Solo se crea; nunca se edita o borra.
+      match /eventos/{eventoId} {
+        allow read: if esAdmin()
+          || (signedIn()
+              && get(/databases/$(database)/documents/tramites/$(tramiteId)).data.ownerUid == request.auth.uid);
+        allow create: if signedIn()
+          && (esAdmin() || request.resource.data.ownerUid == request.auth.uid);
+        allow update, delete: if false;
+      }
+    }
+
+    // Catálogos compartidos por todos.
+    match /catalogos/{doc} {
+      allow read, write: if signedIn();
+    }
+
+    // Perfiles/roles: lectura para autenticados (necesario para listar al reasignar);
+    // escritura solo desde la consola o el script admin.
+    match /usuarios/{uid} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+  }
+}
