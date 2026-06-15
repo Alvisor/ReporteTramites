@@ -14,9 +14,11 @@ import { fileURLToPath } from 'node:url';
 // GOOGLE_APPLICATION_CREDENTIALS apuntando a un archivo de clave (local).
 const keyJson = process.env.FIREBASE_SERVICE_ACCOUNT;
 const keyPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+// Quita un BOM inicial (lo agregan algunas tuberías de PowerShell) antes de parsear.
+const limpiar = (s) => s.replace(/^﻿/, '').trim();
 let sa = null;
-if (keyJson) sa = JSON.parse(keyJson);
-else if (keyPath) sa = JSON.parse(readFileSync(keyPath, 'utf8'));
+if (keyJson) sa = JSON.parse(limpiar(keyJson));
+else if (keyPath) sa = JSON.parse(limpiar(readFileSync(keyPath, 'utf8')));
 
 if (!sa) {
   console.error(
