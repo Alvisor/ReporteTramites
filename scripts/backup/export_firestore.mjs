@@ -5,17 +5,28 @@
 
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
+import { readFileSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+// Credenciales: secreto FIREBASE_SERVICE_ACCOUNT (CI) o
+// GOOGLE_APPLICATION_CREDENTIALS apuntando a un archivo de clave (local).
 const keyJson = process.env.FIREBASE_SERVICE_ACCOUNT;
-if (keyJson) {
-  initializeApp({ credential: cert(JSON.parse(keyJson)) });
-} else {
-  // Usa GOOGLE_APPLICATION_CREDENTIALS apuntando a un archivo de clave.
-  initializeApp();
+const keyPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+let sa = null;
+if (keyJson) sa = JSON.parse(keyJson);
+else if (keyPath) sa = JSON.parse(readFileSync(keyPath, 'utf8'));
+
+if (!sa) {
+  console.error(
+    'Falta la credencial. Define el secreto FIREBASE_SERVICE_ACCOUNT en GitHub ' +
+    '(o GOOGLE_APPLICATION_CREDENTIALS en local).',
+  );
+  process.exit(1);
 }
+
+initializeApp({ credential: cert(sa), projectId: sa.project_id });
 
 const db = getFirestore();
 
