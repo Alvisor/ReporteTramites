@@ -1,0 +1,120 @@
+{
+  "exportedAt": "2026-06-29T04:38:06.486Z",
+  "collections": {
+    "tramites": {
+      "iCXxblOW8oEVk9Nrp0BS": {
+        "data": {
+          "fecha": {
+            "_seconds": 1781931600,
+            "_nanoseconds": 0
+          },
+          "cliente": "Pruebas",
+          "obs": "",
+          "sitio": "Bogotá",
+          "tramite": "Duplicado de tarjeta",
+          "valor": 100000,
+          "gestor": "Manuel",
+          "placa": "ABC123",
+          "creadoEn": {
+            "_seconds": 1781363592,
+            "_nanoseconds": 982000000
+          },
+          "estado": "completado",
+          "recibido": 100000,
+          "actualizadoEn": {
+            "_seconds": 1781363689,
+            "_nanoseconds": 516000000
+          },
+          "ownerUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1"
+        },
+        "subcollections": {
+          "eventos": {
+            "9z2ofB4d6Xsrqmz7EAkS": {
+              "data": {
+                "texto": "En proceso → Completado",
+                "autorNombre": "Manuel",
+                "tipo": "estado",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363685,
+                  "_nanoseconds": 340000000
+                }
+              }
+            },
+            "BdMBlecYxjKQmBt9Qlgs": {
+              "data": {
+                "texto": "Abono de $50.000 (pago completo)",
+                "autorNombre": "Manuel",
+                "tipo": "pago",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363689,
+                  "_nanoseconds": 516000000
+                }
+              }
+            },
+            "JHjyTq9UYZnsBRgs6aT4": {
+              "data": {
+                "texto": "Pendiente → En proceso",
+                "autorNombre": "Manuel",
+                "tipo": "estado",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363680,
+                  "_nanoseconds": 604000000
+                }
+              }
+            },
+            "NBkFZ43EnOKFFV1sZ9pM": {
+              "data": {
+                "texto": "Abono inicial de $50.000 · queda debiendo $50.000",
+                "autorNombre": "Manuel",
+                "tipo": "pago",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363592,
+                  "_nanoseconds": 982000000
+                }
+              }
+            },
+            "Q3yQlbHRBnfkyUFVJmoa": {
+              "data": {
+                "texto": "Trámite creado por Manuel",
+                "autorNombre": "Manuel",
+                "tipo": "creacion",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363592,
+                  "_nanoseconds": 982000000
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "usuarios": {
+      "PJOWWEz6PFZQku99Fl0aKjOvQFq2": {
+        "data": {
+          "nombre": "Papá",
+          "email": "manurodrigues1705@gmail.com",
+          "rol": "normal"
+        }
+      },
+      "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1": {
+        "data": {
+          "nombre": "Manuel",
+          "email": "alvisor.max@gmail.com",
+          "rol": "admin"
+        }
+      },
+      "zKkeWoCMyHQBXaT5Tl4WGftWRr52": {
+        "data": {
+          "nombre": "Mamá",
+          "email": "sofiro0829@gmail.com",
+          "rol": "normal"
+        }
+      }
+    }
+  }
+}
