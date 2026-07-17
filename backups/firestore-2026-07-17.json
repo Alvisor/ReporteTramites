@@ -1,0 +1,393 @@
+{
+  "exportedAt": "2026-07-17T05:46:10.269Z",
+  "collections": {
+    "catalogos": {
+      "tramites": {
+        "data": {
+          "items": [
+            "Traspaso Y Traslado Cuenta",
+            "Traspaso"
+          ]
+        }
+      }
+    },
+    "tramites": {
+      "c8jHRreQejx3QO9BTvD5": {
+        "data": {
+          "obs": "",
+          "sitio": "Funza",
+          "valor": 660000,
+          "gestor": "Mamá",
+          "recibido": 660000,
+          "fecha": {
+            "_seconds": 1783486800,
+            "_nanoseconds": 0
+          },
+          "cliente": "Señora Omaira",
+          "tramite": "Cambio y regrabación motor",
+          "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+          "placa": "SZO460",
+          "creadoEn": {
+            "_seconds": 1783818349,
+            "_nanoseconds": 939000000
+          },
+          "estado": "completado",
+          "actualizadoEn": {
+            "_seconds": 1784235324,
+            "_nanoseconds": 49000000
+          }
+        },
+        "subcollections": {
+          "eventos": {
+            "Myo2UCZrHzIc1O3OiEcj": {
+              "data": {
+                "texto": "Pendiente → Completado",
+                "autorNombre": "Mamá",
+                "tipo": "estado",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1784235324,
+                  "_nanoseconds": 49000000
+                }
+              }
+            },
+            "U9ePDKYS6lPyAQqmfqZ3": {
+              "data": {
+                "texto": "Abono inicial de $660.000 (pago completo)",
+                "autorNombre": "Mamá",
+                "tipo": "pago",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1783818349,
+                  "_nanoseconds": 939000000
+                }
+              }
+            },
+            "UY2T3WPA5goruDFQvxHX": {
+              "data": {
+                "texto": "Trámite creado por Mamá",
+                "autorNombre": "Mamá",
+                "tipo": "creacion",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1783818349,
+                  "_nanoseconds": 939000000
+                }
+              }
+            }
+          }
+        }
+      },
+      "eDanrkleO2wygKn6L6Zj": {
+        "data": {
+          "obs": "",
+          "sitio": "Funza",
+          "valor": 570000,
+          "gestor": "Mamá",
+          "recibido": 570000,
+          "fecha": {
+            "_seconds": 1783573200,
+            "_nanoseconds": 0
+          },
+          "cliente": "Monica",
+          "tramite": "Traspaso",
+          "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+          "placa": "DRY556",
+          "creadoEn": {
+            "_seconds": 1783818501,
+            "_nanoseconds": 805000000
+          },
+          "estado": "completado",
+          "actualizadoEn": {
+            "_seconds": 1784235291,
+            "_nanoseconds": 833000000
+          }
+        },
+        "subcollections": {
+          "eventos": {
+            "4QJZOJVhAfw83uWBSsS7": {
+              "data": {
+                "texto": "Pendiente → Completado",
+                "autorNombre": "Mamá",
+                "tipo": "estado",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1784235291,
+                  "_nanoseconds": 833000000
+                }
+              }
+            },
+            "OWfawGBOdVPqsWm8LS7y": {
+              "data": {
+                "texto": "Abono inicial de $570.000 (pago completo)",
+                "autorNombre": "Mamá",
+                "tipo": "pago",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1783818501,
+                  "_nanoseconds": 805000000
+                }
+              }
+            },
+            "cUDfL4ASnOusX1oTlXvy": {
+              "data": {
+                "texto": "Trámite creado por Mamá",
+                "autorNombre": "Mamá",
+                "tipo": "creacion",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1783818501,
+                  "_nanoseconds": 805000000
+                }
+              }
+            }
+          }
+        }
+      },
+      "iCXxblOW8oEVk9Nrp0BS": {
+        "data": {
+          "fecha": {
+            "_seconds": 1781931600,
+            "_nanoseconds": 0
+          },
+          "cliente": "Pruebas",
+          "obs": "",
+          "sitio": "Bogotá",
+          "tramite": "Duplicado de tarjeta",
+          "valor": 100000,
+          "gestor": "Manuel",
+          "placa": "ABC123",
+          "creadoEn": {
+            "_seconds": 1781363592,
+            "_nanoseconds": 982000000
+          },
+          "estado": "completado",
+          "recibido": 100000,
+          "actualizadoEn": {
+            "_seconds": 1781363689,
+            "_nanoseconds": 516000000
+          },
+          "ownerUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1"
+        },
+        "subcollections": {
+          "eventos": {
+            "9z2ofB4d6Xsrqmz7EAkS": {
+              "data": {
+                "texto": "En proceso → Completado",
+                "autorNombre": "Manuel",
+                "tipo": "estado",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363685,
+                  "_nanoseconds": 340000000
+                }
+              }
+            },
+            "BdMBlecYxjKQmBt9Qlgs": {
+              "data": {
+                "texto": "Abono de $50.000 (pago completo)",
+                "autorNombre": "Manuel",
+                "tipo": "pago",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363689,
+                  "_nanoseconds": 516000000
+                }
+              }
+            },
+            "JHjyTq9UYZnsBRgs6aT4": {
+              "data": {
+                "texto": "Pendiente → En proceso",
+                "autorNombre": "Manuel",
+                "tipo": "estado",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363680,
+                  "_nanoseconds": 604000000
+                }
+              }
+            },
+            "NBkFZ43EnOKFFV1sZ9pM": {
+              "data": {
+                "texto": "Abono inicial de $50.000 · queda debiendo $50.000",
+                "autorNombre": "Manuel",
+                "tipo": "pago",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363592,
+                  "_nanoseconds": 982000000
+                }
+              }
+            },
+            "Q3yQlbHRBnfkyUFVJmoa": {
+              "data": {
+                "texto": "Trámite creado por Manuel",
+                "autorNombre": "Manuel",
+                "tipo": "creacion",
+                "autorUid": "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1",
+                "sello": {
+                  "_seconds": 1781363592,
+                  "_nanoseconds": 982000000
+                }
+              }
+            }
+          }
+        }
+      },
+      "iLxltjMBJ6I6CTKqnfjs": {
+        "data": {
+          "obs": "",
+          "sitio": "",
+          "valor": 663000,
+          "gestor": "Mamá",
+          "recibido": 663000,
+          "fecha": {
+            "_seconds": 1781672400,
+            "_nanoseconds": 0
+          },
+          "cliente": "Sra de Cucuta",
+          "tramite": "Traspaso Y Traslado Cuenta",
+          "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+          "placa": "WNK494X",
+          "creadoEn": {
+            "_seconds": 1783818661,
+            "_nanoseconds": 890000000
+          },
+          "estado": "completado",
+          "actualizadoEn": {
+            "_seconds": 1784235355,
+            "_nanoseconds": 529000000
+          }
+        },
+        "subcollections": {
+          "eventos": {
+            "3r4dlI2Qer3HsTh9csRH": {
+              "data": {
+                "texto": "Abono inicial de $663.000 (pago completo)",
+                "autorNombre": "Mamá",
+                "tipo": "pago",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1783818661,
+                  "_nanoseconds": 890000000
+                }
+              }
+            },
+            "anqiE9GuKz69SBcGKVJF": {
+              "data": {
+                "texto": "Pendiente → Completado",
+                "autorNombre": "Mamá",
+                "tipo": "estado",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1784235355,
+                  "_nanoseconds": 529000000
+                }
+              }
+            },
+            "rpvswCzy4qbmUBEbg2Pi": {
+              "data": {
+                "texto": "Trámite creado por Mamá",
+                "autorNombre": "Mamá",
+                "tipo": "creacion",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1783818661,
+                  "_nanoseconds": 890000000
+                }
+              }
+            }
+          }
+        }
+      },
+      "qpLHE1hGpMRSToXH0dRN": {
+        "data": {
+          "obs": "",
+          "sitio": "Funza",
+          "valor": 1410000,
+          "gestor": "Mamá",
+          "recibido": 0,
+          "fecha": {
+            "_seconds": 1784082138,
+            "_nanoseconds": 252045000
+          },
+          "cliente": "Mónica  Manuel",
+          "tramite": "Traspaso",
+          "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+          "placa": "LWH047",
+          "creadoEn": {
+            "_seconds": 1784082270,
+            "_nanoseconds": 353000000
+          },
+          "estado": "completado",
+          "actualizadoEn": {
+            "_seconds": 1784235305,
+            "_nanoseconds": 35000000
+          }
+        },
+        "subcollections": {
+          "eventos": {
+            "09RmdsbllJlfR67Ei9hy": {
+              "data": {
+                "texto": "Pendiente → Completado",
+                "autorNombre": "Mamá",
+                "tipo": "estado",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1784235305,
+                  "_nanoseconds": 35000000
+                }
+              }
+            },
+            "6rhJktQ5XcSMNRgAPFcP": {
+              "data": {
+                "texto": "Trámite creado por Mamá",
+                "autorNombre": "Mamá",
+                "tipo": "creacion",
+                "autorUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "ownerUid": "zKkeWoCMyHQBXaT5Tl4WGftWRr52",
+                "sello": {
+                  "_seconds": 1784082270,
+                  "_nanoseconds": 353000000
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "usuarios": {
+      "PJOWWEz6PFZQku99Fl0aKjOvQFq2": {
+        "data": {
+          "nombre": "Papá",
+          "email": "manurodrigues1705@gmail.com",
+          "rol": "normal"
+        }
+      },
+      "ZZ4nlIO1FreKlhUc3mDlCK9Siuh1": {
+        "data": {
+          "nombre": "Manuel",
+          "email": "alvisor.max@gmail.com",
+          "rol": "admin"
+        }
+      },
+      "zKkeWoCMyHQBXaT5Tl4WGftWRr52": {
+        "data": {
+          "nombre": "Mamá",
+          "email": "sofiro0829@gmail.com",
+          "rol": "normal"
+        }
+      }
+    }
+  }
+}
